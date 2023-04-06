@@ -1,0 +1,97 @@
+.projects {
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .project {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .projectTitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectDescription {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .projectTechnologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .projectTechnologies span {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .projectLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .projectLink {
+    text-decoration: none;
+    background-color: #4b8e4b;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .projectLink:hover {
+    background-color: #368536;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .projects h2 {
+      font-size: 1.5rem;
+    }
+  
+    .project {
+      width: 100%;
+    }
+  }
+  

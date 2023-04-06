@@ -1,0 +1,47 @@
+.aboutMe {
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .aboutMe h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutMeContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutMePhoto {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  
+  .aboutMeText {
+    max-width: 800px;
+  }
+  
+  .aboutMeText p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .aboutMeContent {
+      flex-direction: column;
+    }
+  
+    .aboutMePhoto {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  

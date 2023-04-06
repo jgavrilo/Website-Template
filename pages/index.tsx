@@ -8,7 +8,12 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/pages/Home.module.css';
 import ImageCard from '@component/components/ImageCard';
-
+import Introduction from '@component/components/Introduction';
+import AboutMe from '@component/components/AboutMe';
+import Skills from '@component/components/Skills';
+import Experience from '@component/components/Experience';
+import Education from '@component/components/Education';
+import Projects from '@component/components/Projects';
 const HomePage: React.FC = () => {
 
   const imageUrl = "https://picsum.photos/id/237/300/200";
@@ -17,11 +22,20 @@ const HomePage: React.FC = () => {
   const link = "https://github.com/jgavrilo";
   return (
     <Layout>
-      <div id="section1" className={styles.section1}>
-        <ImageCard imageUrl={imageUrl} title={title} description={description} link={link}/>
+      <div id="intro" className={styles.section1}>
+        <Introduction/>
       </div>
-      <div id="section2" className={styles.section2}>
-        Content goes here
+      <AboutMe/>
+      <div id="skills" className={styles.section1}>
+        <Skills/>
+      </div>
+      <Experience/>
+      <div id="education" className={styles.section1}>
+        <Education/>
+      </div>
+      <Projects/>
+      <div id="dd" className={styles.section1}>
+        <ImageCard imageUrl={imageUrl} title={title} description={description} link={link}/>
       </div>
     </Layout>
   );
