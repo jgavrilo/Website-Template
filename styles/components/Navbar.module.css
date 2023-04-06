@@ -1,0 +1,34 @@
+/* The .header class styles the header (Navbar) section */
+.header {
+  background-color: var(--navigation-bar-color); 
+  padding: 1rem;            
+  position: fixed;
+  top: 0;           /* Stick the nav bar to the top of the window */
+  width: 100%;      /* Ensure the nav bar stretchs across the entire window width */
+  z-index: 100;     /* Ensure the nav bar stays on top of other elements */
+}
+  
+/* The .navList class styles the navigation list */
+.navList {
+  display: flex;             
+  list-style: none;          /* Removes the default list style (bullets) */
+  margin: 0;                 /* Removes the default margin */
+  padding: 0;                /* Removes the default padding */
+}
+  
+/* The .navItem class styles each navigation item */
+.navItem {
+  margin-right: 1rem;        /* The right margin creates space between items */
+}
+  
+/* The .navLink class styles the navigation links */
+.navLink {
+  color: var(--navigation-bar-text-color);              
+  text-decoration: none;      /* Removes the default link underline */
+}
+  
+/* The .navLink:hover class styles the navigation links on hover */
+.navLink:hover {
+  color: var(--navigation-bar-text-hover-color);
+}
+  

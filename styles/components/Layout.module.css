@@ -1,0 +1,15 @@
+/* The .pageWrapper class sets up a grid container that includes the Navbar and main content */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+  
+/* The .mainContent class sets up a flex container for the main content */
+.mainContent {
+  display: flex;              /* Use Flexbox for the layout */
+  flex-direction: column;     /* Align the content vertically in a column */
+  justify-content: center;    /* Center the content vertically */
+  align-items: center;        /* Center the content horizontally */
+}
+  
