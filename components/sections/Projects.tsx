@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/Projects.module.css';
+import style from '../../styles/components/sections/Projects.module.css';
 
 type Project = {
   id: number;

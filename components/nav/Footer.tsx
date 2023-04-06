@@ -7,7 +7,7 @@
  */
 import React from 'react';
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
-import styles from '../styles/components/Footer.module.css';
+import styles from '../../styles/components/nav/Footer.module.css';
 
 function Footer() {
   return (

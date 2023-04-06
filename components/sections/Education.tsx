@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/Education.module.css';
+import style from '../../styles/components/sections/Education.module.css';
 
 type EducationItem = {
   id: number;

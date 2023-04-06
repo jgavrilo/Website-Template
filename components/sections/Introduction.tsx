@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../styles/Introduction.module.css";
+import style from "../../styles/components/sections/Introduction.module.css";
 
 const Introduction: React.FC = () => {
   return (

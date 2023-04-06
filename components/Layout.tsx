@@ -5,8 +5,8 @@
  *
  */
 import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './nav/Navbar';
+import Footer from './nav/Footer';
 import styles from '../styles/components/Layout.module.css';
 
 interface LayoutProps {

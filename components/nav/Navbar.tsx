@@ -5,8 +5,8 @@
  * 
  */
 import React, { useState, useEffect, useRef } from "react";
-import styles from "../styles/components/Navbar.module.css";
-import Hamburger from "./Hamburger";
+import styles from "../../styles/components/nav/Navbar.module.css";
+import Hamburger from "../Hamburger";
 
 const Navbar: React.FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -46,13 +46,33 @@ const Navbar: React.FC = () => {
         <div className={styles.dropdownContainer}>
             <ul className={styles.dropdownMenu}>
                 <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("section1")}>
-                        Section 1
+                    <span onClick={() => scrollToSection("intro")}>
+                        Home
                     </span>
                 </li>
                 <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("section2")}>
-                        Section 2
+                    <span onClick={() => scrollToSection("aboutme")}>
+                        About Me
+                    </span>
+                </li>
+                <li className={styles.navLink}>
+                    <span onClick={() => scrollToSection("skills")}>
+                        Skills
+                    </span>
+                </li>
+                <li className={styles.navLink}>
+                    <span onClick={() => scrollToSection("experience")}>
+                        Experience
+                    </span>
+                </li>
+                <li className={styles.navLink}>
+                    <span onClick={() => scrollToSection("education")}>
+                        Education
+                    </span>
+                </li>
+                <li className={styles.navLink}>
+                    <span onClick={() => scrollToSection("projects")}>
+                        Projects
                     </span>
                 </li>
             </ul>
