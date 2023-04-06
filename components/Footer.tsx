@@ -6,6 +6,7 @@
  *
  */
 import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import styles from '../styles/components/Footer.module.css';
 
 function Footer() {
@@ -24,9 +25,9 @@ function Footer() {
           <div className={styles.colMd4}>
             <h4>Social</h4>
             <ul>
-              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="#"><FaFacebook/></a></li>
+              <li><a href="#"><FaTwitter/></a></li>
+              <li><a href="#"><FaInstagram/></a></li>
             </ul>
           </div>
           <div className={styles.colMd4}>
