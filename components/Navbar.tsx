@@ -6,6 +6,7 @@
  */
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/components/Navbar.module.css";
+import Hamburger from "./Hamburger";
 
 const Navbar: React.FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -39,25 +40,19 @@ const Navbar: React.FC = () => {
 
   return (
     <header className={styles.header} ref={headerRef}>
-        <div className={styles.hamburgerWrapper}>
-            <span className={styles.brand}>Jeremy Gavrilov</span>
-            <div className={styles.hamburger} onClick={toggleDropdown}>
-                <div className={styles.hamburgerLine}></div>
-                <div className={styles.hamburgerLine}></div>
-                <div className={styles.hamburgerLine}></div>
-            </div>
-        </div>
+        <span className={styles.brand}>Jeremy Gavrilov</span>
+        <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />
         {showDropdown && (
         <div className={styles.dropdownContainer}>
             <ul className={styles.dropdownMenu}>
                 <li className={styles.navLink}>
                     <span onClick={() => scrollToSection("section1")}>
-                        Product 1
+                        Section 1
                     </span>
                 </li>
                 <li className={styles.navLink}>
                     <span onClick={() => scrollToSection("section2")}>
-                        Product 2
+                        Section 2
                     </span>
                 </li>
             </ul>
