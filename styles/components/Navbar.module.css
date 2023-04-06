@@ -1,34 +1,113 @@
 /* The .header class styles the header (Navbar) section */
 .header {
   background-color: var(--navigation-bar-color); 
-  padding: 1rem;            
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 0;           /* Stick the nav bar to the top of the window */
-  width: 100%;      /* Ensure the nav bar stretchs across the entire window width */
-  z-index: 100;     /* Ensure the nav bar stays on top of other elements */
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
-  
-/* The .navList class styles the navigation list */
-.navList {
-  display: flex;             
-  list-style: none;          /* Removes the default list style (bullets) */
-  margin: 0;                 /* Removes the default margin */
-  padding: 0;                /* Removes the default padding */
+
+/* The .brand class styles the brand text */
+.brand {
+  color: var(--navigation-bar-text-color);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-  
-/* The .navItem class styles each navigation item */
-.navItem {
-  margin-right: 1rem;        /* The right margin creates space between items */
+
+/* The .hamburgerWrapper class styles the wrapper for the hamburger icon */
+.hamburgerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-  
-/* The .navLink class styles the navigation links */
-.navLink {
-  color: var(--navigation-bar-text-color);              
-  text-decoration: none;      /* Removes the default link underline */
+
+/* The .hamburger class styles the hamburger icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 1rem;
 }
-  
-/* The .navLink:hover class styles the navigation links on hover */
-.navLink:hover {
+
+/* The .hamburgerLine class styles the lines of the hamburger icon */
+.hamburgerLine {
+  width: 100%;
+  height: 2px;
+  background-color: var(--navigation-bar-text-color);
+}
+
+/* The .dropdownContainer class styles the container for the dropdown menu */
+.dropdownContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  animation-name: dropdownFade;
+  animation-duration: 0.5s;
+}
+
+/* The dropdownFade animation fades in and out the dropdown menu */
+@keyframes dropdownFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* The .dropdownMenu class styles the dropdown menu */
+.dropdownMenu {
+  background-color: var(--navigation-bar-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  /* Change flex-direction to column when screen size is less than 768px */
+  .dropdownMenu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Set width to 100% to ensure each item takes up full width */
+  .dropdownMenu li {
+    width: 100%;
+  }
+
+  /* Set margin-bottom to create space between items */
+  .dropdownMenu .navLink {
+    margin-bottom: 10px;
+  }
+}
+
+/* The .dropdownMenu li class styles each item in the dropdown menu */
+.dropdownMenu li {
+  margin: 10px;
+}
+
+/* The .dropdownMenu .navLink class styles the links in the dropdown menu */
+.dropdownMenu .navLink {
+  color: var(--navigation-bar-text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* The .dropdownMenu .navLink:hover class styles the links in the dropdown menu on hover */
+.dropdownMenu .navLink:hover {
   color: var(--navigation-bar-text-hover-color);
 }
-  
