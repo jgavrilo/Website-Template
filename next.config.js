@@ -3,4 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = nextConfig, {
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
+  trailingSlash: true,
+};
