@@ -16,6 +16,12 @@
   
   /* General */
   --background-color: #6e6eeb;
+  --introduction-background-color: #6e6eeb;
+  --about-me-background-color: #6e6eeb;
+  --education-background-color: #6e6eeb;
+  --experience-background-color: #6e6eeb;
+  --projects-background-color: #6e6eeb;
+  --skills-background-color: #6e6eeb;
 
   /* Project Cards */
   --card-background-color: #ffffff;
@@ -40,7 +46,13 @@
   
   /* General */
   --background-color: #6e6eeb;
-  
+  --introduction-background-color: #6e6eeb;
+  --about-me-background-color: #6e6eeb;
+  --education-background-color: #6e6eeb;
+  --experience-background-color: #6e6eeb;
+  --projects-background-color: #6e6eeb;
+  --skills-background-color: #6e6eeb;
+
   /* Project Cards */
   --card-background-color: #ffffff;
   --card-text-color: #000;

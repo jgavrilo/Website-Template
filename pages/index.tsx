@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
   const link = "https://github.com/jgavrilo";
   return (
     <Layout>
-      <div id="intro" className={styles.section1}>
+      <div id="intro" className={styles.introduction}>
         <Introduction/>
       </div>
       <div id="aboutme" className={styles.section1}>

@@ -9,10 +9,13 @@ const AboutMe: React.FC = () => {
         <img src="https://via.placeholder.com/200x200.png?text=Jeremy+Gavrilov" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
         <div className={style.aboutMeText}>
           <p>
-            I'm a [Your role, e.g., Full Stack Developer] with a degree in [Your degree, e.g., Computer Science] from [Your university, e.g., University of XYZ]. I have been working in the industry for over [number of years] years and have experience in [mention some technologies, e.g., web development, mobile app development, cloud computing].
+            As a passionate Full Stack Developer holding a Computer Science degree from Syracuse University, 
+            I bring two years of industry experience to the table, along with expertise in APIs, AWS, Java, Web Development, and App Development.
           </p>
           <p>
-            I enjoy working on challenging projects and strive to stay up-to-date with the latest technologies and best practices. Outside of work, I'm passionate about [mention hobbies or interests, e.g., photography, hiking, and reading].
+            I thrive on tackling complex projects and am committed to staying current with cutting-edge technologies and industry best practices.
+            When I'm not immersed in coding, you can find me adventuring through the urban jungle, unwinding with video games or a captivating movie, 
+            sor expressing my creativity in the kitchen through baking.
           </p>
         </div>
       </div>

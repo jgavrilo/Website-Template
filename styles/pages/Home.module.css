@@ -1,6 +1,7 @@
 /* Common styles for both sections */
 .section1,
-.section2 {
+.section2,
+.introduction {
   display: flex;              
   flex-direction: column;     
   justify-content: center;    /* Center the content vertically */
@@ -17,4 +18,10 @@
 /* Specific styles for section 2 */
 .section2 {
   background-color: var(--background-color); 
+}
+
+/* Specific for the introduction section */
+.introduction {
+  background-color: var(--introduction-background-color);  
+  padding: 25vmin 0 25vmin 0;
 }

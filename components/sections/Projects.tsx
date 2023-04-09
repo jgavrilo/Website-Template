@@ -22,8 +22,25 @@ const Projects: React.FC = () => {
       liveLink: 'https://project-a.example.com',
       repoLink: 'https://github.com/yourusername/project-a',
     },
-    // Add more projects as needed
-  ];
+    {
+      id: 2,
+      title: 'Project B',
+      description: 'B brief description of Project B.',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      imageUrl: 'https://via.placeholder.com/300x200',
+      liveLink: 'https://project-b.example.com',
+      repoLink: 'https://github.com/yourusername/project-b',
+    },
+    {
+      id: 3,
+      title: 'Project C',
+      description: 'C brief description of Project C.',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      imageUrl: 'https://via.placeholder.com/300x200',
+      liveLink: 'https://project-c.example.com',
+      repoLink: 'https://github.com/yourusername/project-c',
+    },
+    ];
 
   return (
     <section className={style.projects}>
