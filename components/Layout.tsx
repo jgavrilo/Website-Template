@@ -17,7 +17,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.pageWrapper}>
       <Navbar />
-      <main className={styles.mainContent}>{children}</main>
+        <div className={styles.container}>
+          <aside className={styles.leftColumn}></aside>
+          <main className={styles.mainContent}>{children}</main>
+          <aside className={styles.rightColumn}></aside>
+        </div>
       <Footer />
     </div>
   );

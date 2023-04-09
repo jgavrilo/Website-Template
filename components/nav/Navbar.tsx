@@ -27,6 +27,7 @@ const Navbar: React.FC = () => {
         setNavBarHidden(false);
       } else {
         setNavBarHidden(true);
+        setShowDropdown(false)
       }
       setLastScrollPosition(currentScrollPosition);
     };
