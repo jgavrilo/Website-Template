@@ -10,6 +10,8 @@ import Hamburger from "../Hamburger";
 
 const Navbar: React.FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const [navBarHidden, setNavBarHidden] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -19,12 +21,24 @@ const Navbar: React.FC = () => {
       }
     };
 
+    const handleScroll = () => {
+      const currentScrollPosition = window.pageYOffset;
+      if (currentScrollPosition < lastScrollPosition) {
+        setNavBarHidden(false);
+      } else {
+        setNavBarHidden(true);
+      }
+      setLastScrollPosition(currentScrollPosition);
+    };
+
     document.addEventListener("click", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollPosition]);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -38,8 +52,12 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const navbarClasses = navBarHidden
+    ? `${styles.header} ${styles.hidden}`
+    : styles.header;
+
   return (
-    <header className={styles.header} ref={headerRef}>
+    <header className={navbarClasses} ref={headerRef}>
         <span className={styles.brand}>Jeremy Gavrilov</span>
         <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />
         {showDropdown && (
