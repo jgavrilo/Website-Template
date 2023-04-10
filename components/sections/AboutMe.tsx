@@ -6,7 +6,6 @@ const AboutMe: React.FC = () => {
     <section className={style.aboutMe}>
       <h2>About Me</h2>
       <div className={style.aboutMeContent}>
-        <img src="https://via.placeholder.com/200x200.png?text=Jeremy+Gavrilov" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
         <div className={style.aboutMeText}>
           <p>
             As a passionate Full Stack Developer holding a Computer Science degree from Syracuse University, 
@@ -18,6 +17,8 @@ const AboutMe: React.FC = () => {
             sor expressing my creativity in the kitchen through baking.
           </p>
         </div>
+        <img src="https://via.placeholder.com/200x200.png?text=Jeremy+Gavrilov" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
+
       </div>
     </section>
   );

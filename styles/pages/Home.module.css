@@ -2,12 +2,20 @@
 .section1,
 .section2,
 .introduction {
+  background-color: var(--introduction-background-color);  
+  width: 100%;   
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+               /* Make the sections take up the full width of the viewport */
+  height: fit-content;  
   display: flex;              
   flex-direction: column;     
   justify-content: center;    /* Center the content vertically */
   align-items: center;        /* Center the content horizontally */
-  width: 100%;                /* Make the sections take up the full width of the viewport */
-  height: fit-content;              
+      
+  -webkit-box-pack: center;
+  -webkit-box-align: center;      
 }
 
 /* Specific styles for section 1 */
@@ -21,15 +29,3 @@
 }
 
 /* Specific for the introduction section */
-.introduction {
-  background-color: var(--introduction-background-color);  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0px;
-}

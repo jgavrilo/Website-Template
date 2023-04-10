@@ -12,7 +12,9 @@ const Navbar: React.FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [lastScrollPosition, setLastScrollPosition] = useState(0);
   const [navBarHidden, setNavBarHidden] = useState(false);
-  const headerRef = useRef<HTMLDivElement>(null);
+  const [isMobileView, setIsMobileView] = useState(
+    typeof window !== "undefined" && window.innerWidth < 768
+  );  const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -27,17 +29,23 @@ const Navbar: React.FC = () => {
         setNavBarHidden(false);
       } else {
         setNavBarHidden(true);
-        setShowDropdown(false)
+        setShowDropdown(false);
       }
       setLastScrollPosition(currentScrollPosition);
     };
 
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+
     document.addEventListener("click", handleClickOutside);
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, [lastScrollPosition]);
 
@@ -60,7 +68,7 @@ const Navbar: React.FC = () => {
   return (
     <header className={navbarClasses} ref={headerRef}>
         <span className={styles.brand}>Jeremy Gavrilov</span>
-        <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />
+        {isMobileView && <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />}
         {showDropdown && (
         <div className={styles.dropdownContainer}>
             <ul className={styles.dropdownMenu}>

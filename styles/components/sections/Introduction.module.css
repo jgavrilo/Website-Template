@@ -8,19 +8,57 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    max-width: 70vw;
+    padding-top: 10vh;
   }
   
   .introduction h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+    font-weight: 400;
   }
   
   .introduction p {
     font-size: 1.2rem;
+    font-family: var(--font-mono);
     max-width: 800px;
-    
   }
   
-  #message {
-    text-align: left;
+  #helloWorld {
+
   }
+
+  #name {
+    margin: 0px;
+    font-size: clamp(40px, 3.5vw, 80px);
+    color: green;
+  }
+
+  #message {
+    margin: 0px;
+    font-size: clamp(40px, 3.5vw, 80px);
+    color: slateblue;
+  }
+
+  #welcome {
+    
+  }
+
+  @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
