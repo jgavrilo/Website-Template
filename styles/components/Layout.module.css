@@ -35,6 +35,6 @@
   .leftColumn,
   .rightColumn {
     background-color: var(--background-color); /* Set the background color for the side columns */
-    min-height: 10vh;          /* Set the minimum height to fill the viewport */
+    min-height: 0vh;          /* Set the minimum height to fill the viewport */
   }
 }

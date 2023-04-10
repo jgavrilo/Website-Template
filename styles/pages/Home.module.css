@@ -23,5 +23,13 @@
 /* Specific for the introduction section */
 .introduction {
   background-color: var(--introduction-background-color);  
-  padding: 25vmin 0 25vmin 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
 }

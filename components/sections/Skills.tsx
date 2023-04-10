@@ -2,19 +2,16 @@ import React from 'react';
 import style from '../../styles/components/sections/Skills.module.css';
 
 const Skills: React.FC = () => {
-  const skills = [
-    'JavaScript',
-    'React',
-    'Node.js',
-    'HTML & CSS',
-    'Git',
+  const skills = [    
+    'Java',
+    'Web Development',
+    'Next.js',
+    'React.js',
     'TypeScript',
-    'Python',
-    'Django',
-    'MongoDB',
-    'SQL',
-    'RESTful APIs',
-    'Agile & Scrum',
+    'JavaScript',
+    'iOS Development',
+    'SwiftUI',
+    'API Development',
   ];
 
   return (

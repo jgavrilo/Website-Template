@@ -9,13 +9,14 @@
 
   /* TODO: Assign color variables (light and dark)*/
   /* Color variables */  
-  --base-color-1: #0B1D51;
+  --base-color-1: rgb(11, 29, 81);
   --base-color-2: #B580DC;
   --base-color-3: #6ba1c4;
   --base-color-4: white;
-  --base-color-5: #B580DC;
+  --base-color-5: yellow;
 
   /* Navigation */  
+  --navigation-bar-color-rgb: 11, 29, 34; /* Replace with the RGB values of your color */
   --navigation-bar-color: var(--base-color-1);
   --navigation-bar-text-color: var(--base-color-2);
   --navigation-bar-text-hover-color: var(--base-color-3);
