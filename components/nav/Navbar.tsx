@@ -83,11 +83,6 @@ const Navbar: React.FC = () => {
                     </span>
                 </li>
                 <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("skills")}>
-                        Skills
-                    </span>
-                </li>
-                <li className={styles.navLink}>
                     <span onClick={() => scrollToSection("experience")}>
                         Experience
                     </span>
