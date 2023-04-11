@@ -8,29 +8,32 @@ import React from 'react';
 import Navbar from './nav/Navbar';
 import Footer from './nav/Footer';
 import styles from '../styles/components/Layout.module.css';
-import RightColumn from './RightColumn';
+import LeftColumn from './LeftColumn';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const rightColumnItems = [
+
+  const sections = [
     { id: 'intro', text: 'Home' },
     { id: 'aboutme', text: 'About Me' },
     { id: 'experience', text: 'Experience' },
     { id: 'education', text: 'Education' },
     { id: 'projects', text: 'Projects' },
   ];
+
   return (
     <div className={styles.pageWrapper}>
-      <Navbar />
+      <Navbar items={sections}/>
       <div className={styles.container}>
-        <aside className={styles.leftColumn}></aside>
-        <main className={styles.mainContent}>{children}</main>
-        <div className={styles.rightColumn}>
-        <RightColumn items={rightColumnItems} />
+        <div className={styles.leftColumn}>
+          <LeftColumn items={sections} />
         </div>
+        <main className={styles.mainContent}>{children}</main>
+        <aside className={styles.rightColumn}></aside>
+
       </div>
       <Footer />
     </div>

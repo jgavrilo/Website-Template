@@ -8,13 +8,16 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/components/nav/Navbar.module.css";
 import Hamburger from "../Hamburger";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  items: { id: string; text: string }[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ items }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [lastScrollPosition, setLastScrollPosition] = useState(0);
   const [navBarHidden, setNavBarHidden] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(
-    typeof window !== "undefined" && window.innerWidth < 768
-  );  const headerRef = useRef<HTMLDivElement>(null);
+  const [isMobileView, setIsMobileView] = useState(false);
+  const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -37,6 +40,9 @@ const Navbar: React.FC = () => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 768);
     };
+
+    // Initialize isMobileView state
+    handleResize();
 
     document.addEventListener("click", handleClickOutside);
     window.addEventListener("scroll", handleScroll);
@@ -71,34 +77,16 @@ const Navbar: React.FC = () => {
         {isMobileView && <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />}
         {showDropdown && (
         <div className={styles.dropdownContainer}>
-            <ul className={styles.dropdownMenu}>
-                <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("intro")}>
-                        Home
-                    </span>
-                </li>
-                <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("aboutme")}>
-                        About Me
-                    </span>
-                </li>
-                <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("experience")}>
-                        Experience
-                    </span>
-                </li>
-                <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("education")}>
-                        Education
-                    </span>
-                </li>
-                <li className={styles.navLink}>
-                    <span onClick={() => scrollToSection("projects")}>
-                        Projects
-                    </span>
-                </li>
-            </ul>
-        </div>
+        <ul className={styles.dropdownMenu}>
+          {items.map((item) => (
+            <li key={item.id} className={styles.navLink}>
+              <span onClick={() => scrollToSection(item.id)}>
+                {item.text}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
       )}
     </header>
   );

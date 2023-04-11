@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from '../styles/components/RightColumn.module.css';
+import styles from '../styles/components/LeftColumn.module.css';
 
-interface RightColumnProps {
+interface LeftColumnProps {
   items: { id: string; text: string }[];
 }
 
-const RightColumn: React.FC<RightColumnProps> = ({ items }) => {
+const LeftColumn: React.FC<LeftColumnProps> = ({ items }) => {
   const scrollToSection = (id: string) => {
     const sectionElement = document.getElementById(id);
     if (sectionElement) {
@@ -14,7 +14,7 @@ const RightColumn: React.FC<RightColumnProps> = ({ items }) => {
   };
 
   return (
-    <aside className={styles.rightColumn}>
+    <aside className={styles.leftColumn}>
       {items.map((item) => (
         <span
           key={item.id}
@@ -28,4 +28,4 @@ const RightColumn: React.FC<RightColumnProps> = ({ items }) => {
   );
 };
 
-export default RightColumn;
+export default LeftColumn;
