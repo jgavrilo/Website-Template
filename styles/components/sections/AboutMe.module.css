@@ -48,3 +48,9 @@
     }
   }
   
+    /* Media query for mobile view (768px and smaller) */
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    max-width: 100vw;
+  }
+}

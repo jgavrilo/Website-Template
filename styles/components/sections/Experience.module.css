@@ -8,6 +8,12 @@
     background-color: var(--experience-background-color);
   }
   
+  /* Media query for mobile view (768px and smaller) */
+@media screen and (max-width: 768px) {
+  .experience {
+    max-width: 100vw;
+  }
+}
   .experience h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
