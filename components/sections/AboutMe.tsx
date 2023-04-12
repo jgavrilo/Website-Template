@@ -1,3 +1,8 @@
+/** AboutMe.tsx
+ *  
+ *  AboutMe component that displays a little about the developer.
+ * 
+ */
 import React from 'react';
 import style from "../../styles/components/sections/AboutMe.module.css";
 

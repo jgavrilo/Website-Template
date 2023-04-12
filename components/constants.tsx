@@ -1,7 +1,7 @@
 import { FaFacebook, FaInstagram, FaGithub, FaSpotify, FaLinkedin } from 'react-icons/fa';
 
 export const SECTIONS = [
-    { id: 'intro', text: 'Home' },
+    { id: 'intro', text: 'Hello, World!' },
     { id: 'aboutme', text: 'About Me' },
     { id: 'experience', text: 'Experience' },
     { id: 'education', text: 'Education' },

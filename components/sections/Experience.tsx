@@ -1,3 +1,4 @@
+
 import React from 'react';
 import style from '../../styles/components/sections/Experience.module.css';
 
@@ -14,29 +15,17 @@ const Experience: React.FC = () => {
   const jobs: Job[] = [
     {
       id: 1,
-      title: 'Full Stack Developer',
-      company: 'Company A',
-      location: 'City, Country',
-      dates: 'January 2022 - Present',
+      title: 'Software Developement Engineer',
+      company: 'Amazon.com LLC',
+      location: 'Seattle, Washington',
+      dates: 'July 2021 - March 2023',
       description: [
-        'Developed and maintained web applications using React, Node.js, and MongoDB.',
-        'Collaborated with cross-functional teams to deliver high-quality software.',
-        'Implemented responsive designs and optimized web performance.',
+        'Design and implement new features for Amazon’s central marketplace and filtering service for personalized recommendations on retail pages.',
+        'Handle operations on-call duties to improve service maintainability and provide 99.9% availability during regular rotations and peak events.',
+        'Collaborate with internal teams to build frameworks and a command-line interface (CLI) to improve the developer experience.',
+        'Conduct code reviews and write automated tests to maintain code quality and ensure software reliability.'
       ],
     },
-    {
-      id: 2,
-      title: 'Web Developer',
-      company: 'Company B',
-      location: 'City, Country',
-      dates: 'June 2020 - December 2021',
-      description: [
-        'Designed and developed web applications using HTML, CSS, and JavaScript.',
-        'Worked closely with the design team to implement user interfaces.',
-        'Provided technical support and bug fixes for client projects.',
-      ],
-    },
-    // Add more jobs as needed
   ];
 
   return (

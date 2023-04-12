@@ -14,9 +14,9 @@ const Education: React.FC = () => {
     {
       id: 1,
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'XYZ University',
-      location: 'City, Country',
-      dates: '2016 - 2020',
+      institution: 'Syracuse University',
+      location: 'Syracuse, NY',
+      dates: '2017 - 2021',
     },
     // Add more education items as needed
   ];

@@ -1,49 +1,61 @@
+/* Styles for the Introduction component */
+
 .introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    justify-content: center;
-    padding: 1.5rem;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    max-width: 70vw;
-    padding-top: 10vh;
-  }
-  
-  .introduction h1 {
-    font-family: var(--font-mono);
-    font-weight: 400;
-  }
-  
-  .introduction p {
-    font-size: 1.2rem;
-    font-family: var(--font-mono);
-    max-width: 800px;
-  }
-  
-  #helloWorld {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
+  padding: 1.5rem;
+  max-width: 70vw;
+  padding-top: 10vh;
 
-  }
+  /* Typography */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
 
-  #name {
-    margin: 0px;
-    font-size: clamp(40px, 3.5vw, 80px);
-    color: green;
-  }
+/* Name and message headings */
+.introduction h1 {
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
 
-  #message {
-    margin: 0px;
-    font-size: clamp(40px, 3.5vw, 80px);
-    color: slateblue;
-  }
+/* Text paragraphs */
+.introduction p {
+  font-size: 1.2rem;
+  font-family: var(--font-mono);
+  max-width: 800px;
+}
 
-  #welcome {
-    
-  }
+/* Hello World message */
+#helloWorld {
+  /* No styles applied */
+}
 
-  @keyframes fadeIn {
+/* Name heading */
+#name {
+  margin: 0px;
+  font-size: clamp(40px, 3.5vw, 80px);
+  color: green;
+}
+
+/* Message heading */
+#message {
+  margin: 0px;
+  font-size: clamp(40px, 3.5vw, 80px);
+  color: slateblue;
+}
+
+/* Bio paragraph */
+#welcome {
+  /* No styles applied */
+}
+
+/* Animation keyframes for fade-in effect */
+@keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -54,11 +66,10 @@
   }
 }
 
+/* CSS class for fade-in animation */
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-
-
