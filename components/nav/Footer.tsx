@@ -6,6 +6,7 @@
  */
 import React from 'react';
 import styles from '../../styles/components/nav/Footer.module.css';
+import { COPYRIGHT } from '../constants';
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
       <div className={styles.containerFluid}>
         <div className={styles.row}>
           <div className={styles.colMd12}>
-            <p>&copy; 2023 YourSiteName. All Rights Reserved.</p>
+            <p>&copy; {COPYRIGHT}</p>
           </div>
         </div>
       </div>
