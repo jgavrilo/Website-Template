@@ -17,6 +17,7 @@
   .item {
     cursor: pointer;
     color: var(--navigation-bar-text-color);
+    font-size: 2.5rem; /* Increase the font size of the icons */
     margin: 0.5rem;
     transition: color 0.3s ease, opacity 0.5s ease, transform 0.5s ease;
     opacity: 0;
@@ -29,16 +30,24 @@
   }
   
   /* Add a delay to each item */
-  .item:nth-child(3) {
-    animation: slideInFromRight 0.5s 0.5s forwards;
+  .item:nth-child(1) {
+    animation: slideInFromRight 0.5s 2.5s forwards;
   }
   
   .item:nth-child(2) {
-    animation: slideInFromRight 0.5s 1.0s forwards;
+    animation: slideInFromRight 0.5s 2.0s forwards;
   }
   
-  .item:nth-child(1) {
+  .item:nth-child(3) {
     animation: slideInFromRight 0.5s 1.5s forwards;
+  }
+
+  .item:nth-child(4) {
+    animation: slideInFromRight 0.5s 1.0s forwards;
+  }
+
+  .item:nth-child(5) {
+    animation: slideInFromRight 0.5s 0.5s forwards;
   }
   
   /* Add keyframes for the slideInFromRight animation */
@@ -50,8 +59,13 @@
   }
   
   @media screen and (max-width: 767px) {
-  
     .rightColumn {
-      display: none;            /* Hide the left column on smaller screens */
+      position: static; /* Reset position to the default */
+      width: 100%; /* Make it full width */
+      height: auto; /* Reset height to auto */
+      margin-bottom: 0; /* Reset margin to 0 */
+      padding-right: 0; /* Reset padding to 0 */
+      flex-direction: row; /* Change flex direction to row */
+      justify-content: center; /* Center items horizontally */
     }
   }

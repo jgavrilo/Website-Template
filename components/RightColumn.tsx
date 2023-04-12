@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/components/RightColumn.module.css';
 
 interface RightColumnProps {
-  socialIcons: { id: string; iconSrc: string; link: string }[];
+  socialIcons: { id: string; icon: React.ReactNode; link: string }[];
 }
 
 const RightColumn: React.FC<RightColumnProps> = ({ socialIcons }) => {
@@ -13,21 +13,14 @@ const RightColumn: React.FC<RightColumnProps> = ({ socialIcons }) => {
   return (
     <aside className={styles.rightColumn}>
       {socialIcons.map((icon) => (
-        /*<img
-          key={icon.id}
-          src={icon.iconSrc}
-          alt="social media icon"
-          className={styles.icon}
-          onClick={() => openLink(icon.link)}
-        />*/
         <span
           key={icon.id}
-          className={styles.item}        
-          >
-          {icon.id}
+          className={styles.item}
+          onClick={() => openLink(icon.link)}
+        >
+          {icon.icon}
         </span>
       ))}
-      
     </aside>
   );
 };
