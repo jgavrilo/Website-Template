@@ -14,6 +14,7 @@ import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
 import { SOCIAL_MEDIA } from '../constants';
 import { SECTIONS } from '../constants';
+
 // Define the type for the Layout component's props
 interface LayoutProps {
   children: React.ReactNode;

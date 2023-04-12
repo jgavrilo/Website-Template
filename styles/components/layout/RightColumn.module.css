@@ -62,7 +62,7 @@
 }
 
 /* Media query to make the right column on appear at the bottom on smaller screens */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .rightColumn {
     position: static; 
     width: 100%; 

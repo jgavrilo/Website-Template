@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
     // Handle resize events to determine if the view is in mobile or desktop mode
     const handleResize = () => {
-      setIsMobileView(window.innerWidth < 768);
+      setIsMobileView(window.innerWidth <= 768);
     };
 
     // Initialize isMobileView state
