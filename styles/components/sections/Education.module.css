@@ -9,6 +9,13 @@
   background-color: var(--education-background-color);
 }
 
+/* Media query for mobile view (768px and smaller) */
+@media screen and (max-width: 768px) {
+  .education {
+    max-width: 100vw;
+  }
+}
+
 /* Education section title styles */
 .education h2 {
   font-size: 2rem;
