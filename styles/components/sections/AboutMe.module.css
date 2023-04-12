@@ -1,56 +1,65 @@
+/* Main section styles */
 .aboutMe {
-    padding: 1.5rem;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    font-family: var(--font-mono);
-    max-width: 70vw;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  max-width: 70vw;
+  background: var(--background-color);
+}
 
-  }
-  
-  .aboutMe h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .aboutMeContent {
-    display: flex;
-    flex-wrap: wrap;
+/* Flex container for section title and image */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Section title styles */
+.aboutMe h2 {
+  font-size: 2rem;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+/* Image container styles */
+.aboutMePhoto {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text container styles */
+.aboutMeText {
+  max-width: 800px;
+}
+
+/* Paragraph text styles */
+.aboutMeText p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
-  
+
   .aboutMePhoto {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 2rem;
-  }
-  
-  .aboutMeText {
-    max-width: 800px;
-  }
-  
-  .aboutMeText p {
-    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .aboutMeContent {
-      flex-direction: column;
-    }
-  
-    .aboutMePhoto {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-  }
-  
-    /* Media query for mobile view (768px and smaller) */
+}
+
+/* Media query for mobile view (768px and smaller) */
 @media screen and (max-width: 768px) {
   .aboutMe {
     max-width: 100vw;
   }
 }
+
