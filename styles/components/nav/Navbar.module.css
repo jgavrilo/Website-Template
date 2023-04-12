@@ -11,9 +11,9 @@
   z-index: 100;
   transition: transform 0.3s ease-in-out;
   animation: fadeInFromTop 0.5s ease-out;
-
 }
 
+/* The .header::before creates a semi-transparent background for the header with a blur effect */
 .header::before {
   content: '';
   background-color: rgba(var(--navigation-bar-color-rgb), 0.8);
@@ -68,34 +68,6 @@
   padding: 0;
   background-color: rgba(var(--navigation-bar-color-rgb), 0.8);
   backdrop-filter: blur(5px);
-
-
-}
-
-.dropdownMenu::before {
-  content: '';
-  background-color: rgba(var(--navigation-bar-color-rgb), 0.8);
-
-  backdrop-filter: blur(5px);
-}
-
-@media (max-width: 768px) {
-  /* Change flex-direction to column when screen size is less than 768px */
-  .dropdownMenu {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* Set width to 100% to ensure each item takes up full width */
-  .dropdownMenu li {
-    width: 100%;
-  }
-
-  /* Set margin-bottom to create space between items */
-  .dropdownMenu .navLink {
-    margin-bottom: 10px;
-  }
 }
 
 /* The .dropdownMenu li class styles each item in the dropdown menu */
@@ -115,13 +87,34 @@
   color: var(--navigation-bar-text-hover-color);
 }
 
-@media screen and (min-width: 768px) {
-  
+/* Media query for mobile view (less than 768px) */
+@media (max-width: 768px) {
+  /* Change flex-direction to column when screen size is less than 768px */
   .dropdownMenu {
-    display: none;            /* Hide the left column on smaller screens */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Set width to 100% to ensure each item takes up full width */
+  .dropdownMenu li {
+    width: 100%;
+  }
+
+  /* Set margin-bottom to create space between items */
+  .dropdownMenu .navLink {
+    margin-bottom: 10px;
   }
 }
 
+/* Media query for desktop view (768px and larger) */
+@media screen and (min-width: 768px) {
+  .dropdownMenu {
+    display: none; /* Hide the dropdown menu on larger screens */
+  }
+}
+
+/* Animation for the fadeInFromTop effect */
 @keyframes fadeInFromTop {
   from {
     opacity: 0;

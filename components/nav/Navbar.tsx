@@ -2,6 +2,8 @@
  * 
  *  This is the Navbar component for the website.
  *  It contains a navigation bar with links to scroll to different sections of the page.
+ *  The navigation bar is responsive and hides when scrolling down, reappearing when scrolling up.
+ *  In mobile view, a hamburger menu is used to display the navigation links.
  * 
  */
 import React, { useState, useEffect, useRef } from "react";
@@ -20,12 +22,14 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
   const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Handle click events outside the navbar
     const handleClickOutside = (event: MouseEvent) => {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
         setShowDropdown(false);
       }
     };
 
+    // Handle scroll events to hide or show the navbar
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
       if (currentScrollPosition < lastScrollPosition) {
@@ -37,6 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       setLastScrollPosition(currentScrollPosition);
     };
 
+    // Handle resize events to determine if the view is in mobile or desktop mode
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 768);
     };
@@ -55,10 +60,12 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
     };
   }, [lastScrollPosition]);
 
+  // Toggle the dropdown menu
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
 
+  // Scroll smoothly to the target section
   const scrollToSection = (id: string) => {
     const sectionElement = document.getElementById(id);
     if (sectionElement) {

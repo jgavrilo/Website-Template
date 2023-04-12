@@ -7,50 +7,6 @@
     text-align: center;
 }
 
-/* The .footer h4 styles the heading for each footer section */
-.footer h4 {
-    margin-bottom: 20px;
-}
-
-/* The .footer ul styles the unordered list in each footer section */
-.footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* The .footer ul li styles each list item in each footer section */
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-/* The .footer ul li a styles each link in each footer section */
-.footer ul li a {
-    color: var(--footer-link-color);
-    text-decoration: none;
-}
-
-/* The .footer ul li a:hover styles the links in each footer section on hover */
-.footer ul li a:hover {
-    color: var(--footer-link-hover-color);
-}
-
-/* The .container class sets a max-width for the content container */
-.container {
-    max-width: 1140px;
-}
-
-/* The .colMd4 class sets the width and float for each column in the footer */
-.colMd4 {
-    width: 33.33%;
-    float: left;
-}
-
-/* The .colMd4:last-child removes the margin-right for the last column in each row */
-.colMd4:last-child {
-    margin-right: 0;
-}
-
 /* The .containerFluid styles the container for the fluid content in the footer */
 .containerFluid {
     background-color: var(--footer-fluid-background-color);
@@ -62,4 +18,3 @@
 .containerFluid p {
     margin-bottom: 0;
 }
-  
