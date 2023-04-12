@@ -5,7 +5,7 @@
  *
  */
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../components/layout/Layout';
 import Section from '../components/sections/Section';
 import styles from '../styles/pages/Home.module.css';
 import ImageCard from '@component/components/ImageCard';

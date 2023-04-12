@@ -5,9 +5,9 @@
  *
  */
 import React from 'react';
-import Navbar from './nav/Navbar';
-import Footer from './nav/Footer';
-import styles from '../styles/components/Layout.module.css';
+import Navbar from '../nav/Navbar';
+import Footer from '../nav/Footer';
+import styles from '../../styles/layout/Layout.module.css';
 import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
 import { FaFacebook, FaInstagram, FaGithub, FaSpotify, FaLinkedin } from 'react-icons/fa';

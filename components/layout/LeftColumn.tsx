@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/components/LeftColumn.module.css";
+import styles from "../../styles/layout/LeftColumn.module.css";
 
 interface LeftColumnProps {
   items: { id: string; text: string }[];

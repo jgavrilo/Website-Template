@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/RightColumn.module.css';
+import styles from '../../styles/layout/RightColumn.module.css';
 
 interface RightColumnProps {
   socialIcons: { id: string; icon: React.ReactNode; link: string }[];
