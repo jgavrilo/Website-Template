@@ -1,0 +1,49 @@
+/* The .hamburgerWrapper class styles the wrapper for the hamburger icon */
+.hamburgerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* The .hamburger class styles the hamburger icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 1rem;
+  right: 0;
+}
+
+/* The .hamburgerLine class styles the lines of the hamburger icon */
+.hamburgerLine {
+  width: 100%;
+  height: 2px;
+  background-color: var(--navigation-bar-text-color);
+  transition: all 0.3s ease;
+}
+
+/* The .hamburgerLineCross1 class styles the first line of the cross icon */
+.hamburgerLineCross1 {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+/* The .hamburgerLineCross2 class styles the second line of the cross icon */
+.hamburgerLineCross2 {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+/* The .hamburgerCross .hamburgerLine1 class styles the first line of the cross icon */
+.hamburgerCross .hamburgerLine1 {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+/* The .hamburgerCross .hamburgerLine2 class styles the second line of the cross icon */
+.hamburgerCross .hamburgerLine2 {
+  transform: rotate(45deg) translate(3px, -3px);
+}

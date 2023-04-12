@@ -8,7 +8,7 @@
  */
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/components/nav/Navbar.module.css";
-import Hamburger from "../Hamburger";
+import Hamburger from "./Hamburger";
 
 interface NavbarProps {
   items: { id: string; text: string }[];

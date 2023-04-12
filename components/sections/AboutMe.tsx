@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
           <p>
             I thrive on tackling complex projects and am committed to staying current with cutting-edge technologies and industry best practices.
             When I'm not immersed in coding, you can find me adventuring through the urban jungle, unwinding with video games or a captivating movie, 
-            sor expressing my creativity in the kitchen through baking.
+            or expressing my creativity in the kitchen through baking.
           </p>
         </div>
         <img src="https://via.placeholder.com/200x200.png?text=Jeremy+Gavrilov" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
