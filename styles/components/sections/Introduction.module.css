@@ -46,14 +46,12 @@
 #name {
   margin: 0px;
   font-size: clamp(40px, 3.5vw, 80px);
-  color: green;
 }
 
 /* Message heading */
 #message {
   margin: 0px;
   font-size: clamp(40px, 3.5vw, 80px);
-  color: slateblue;
 }
 
 /* Bio paragraph */
