@@ -21,6 +21,7 @@ const RightColumn: React.FC<RightColumnProps> = ({ socialIcons }) => {
           onClick={() => openLink(icon.link)}
         />*/
         <span
+          key={icon.id}
           className={styles.item}        
           >
           {icon.id}

@@ -29,24 +29,16 @@
   }
   
   /* Add a delay to each item */
-  .item:nth-child(1) {
+  .item:nth-child(3) {
     animation: slideInFromRight 0.5s 0.5s forwards;
   }
   
   .item:nth-child(2) {
-    animation: slideInFromRight 0.5s 1s forwards;
+    animation: slideInFromRight 0.5s 1.0s forwards;
   }
   
-  .item:nth-child(3) {
+  .item:nth-child(1) {
     animation: slideInFromRight 0.5s 1.5s forwards;
-  }
-  
-  .item:nth-child(4) {
-    animation: slideInFromRight 0.5s 2.0s forwards;
-  }
-  
-  .item:nth-child(5) {
-    animation: slideInFromRight 0.5s 2.5s forwards;
   }
   
   /* Add keyframes for the slideInFromRight animation */

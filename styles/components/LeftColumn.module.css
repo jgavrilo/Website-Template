@@ -12,8 +12,14 @@
     padding-top: 1rem; /* Add some padding to separate items from the top edge */
     font-family: var(--font-mono);
     padding-left: 10px;
+
   }
   
+  .dynamic {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
   .item {
     cursor: pointer;
     color: var(--navigation-bar-text-color);
