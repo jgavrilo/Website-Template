@@ -1,6 +1,13 @@
+/** RightColumn.tsx
+ *
+ * This is the RightColumn component for the website.
+ * It displays a list of social icons in the right column of the page layout.
+ *
+ */
 import React from 'react';
-import styles from '../../styles/layout/RightColumn.module.css';
+import styles from '../../styles/components/layout/RightColumn.module.css';
 
+// Define the prop types for the RightColumn component
 interface RightColumnProps {
   socialIcons: { id: string; icon: React.ReactNode; link: string }[];
 }

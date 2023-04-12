@@ -1,0 +1,39 @@
+/* The .pageWrapper class sets up a flex container that includes the Navbar and main content */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* The .container class sets up a CSS Grid container for the layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr; /* Define the width ratio of the three columns */
+}
+
+/* The .mainContent class styles the main content area */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The .leftColumn and .rightColumn classes style the side columns */
+.leftColumn,
+.rightColumn {
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+/* Media query to hide side columns on smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Set the width ratio to display only the main content */
+  }
+
+  .leftColumn,
+  .rightColumn {
+    min-height: 0vh; /* Set the minimum height to 0 for side columns on smaller screens */
+  }
+}
