@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
       company: 'Amazon.com LLC',
       location: 'Seattle, Washington',
       dates: 'July 2021 - March 2023',
-      imageUrl: 'https://via.placeholder.com/100x100.png',
+      imageUrl: '../../public/Amazon.jpeg',
       description: [
         'Design and implement new features for Amazon’s central marketplace and filtering service for personalized recommendations on retail pages.',
         'Handle operations on-call duties to improve service maintainability and provide 99.9% availability during regular rotations and peak events.',

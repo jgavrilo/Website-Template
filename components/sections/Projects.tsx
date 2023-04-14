@@ -15,13 +15,13 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Simple Planner',
-      description: 'The final project for my very first programming class. Planning to revisit.',
-      technologies: ['Java'],
-      imageUrl: 'https://via.placeholder.com/300x200',
-      liveLink: 'https://github.com/jgavrilo/Simple-Planner',
-      repoLink: 'https://github.com/jgavrilo/Simple-Planner',
-    },
+      title: 'Java Planner',
+      description: 'A schedule management app from my introductory programming class. Designed to help students organize classes and appointments.',
+      technologies: ['Java', 'I/O'],
+      imageUrl: './Java.webp',
+      liveLink: 'https://replit.com/@jgavrilo/javaPlanner?v=1',
+      repoLink: 'https://github.com/jgavrilo/javaPlanner',
+    },    
     {
       id: 2,
       title: 'Amazon Price Tracker',
@@ -33,7 +33,16 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Stock Market Data Analysis',
+      title: 'Stock Market Analysis',
+      description: 'Final Project for CIS 400 - Principle of Social Media and Data Mining. Planning to revisit.',
+      technologies: ['Python', 'Twitter API', 'MongoDB'],
+      imageUrl: 'https://via.placeholder.com/300x200',
+      liveLink: 'https://project-c.example.com',
+      repoLink: 'https://github.com/yourusername/project-c',
+    },
+    {
+      id: 4,
+      title: 'Campus Rush',
       description: 'Final Project for CIS 400 - Principle of Social Media and Data Mining. Planning to revisit.',
       technologies: ['Python', 'Twitter API', 'MongoDB'],
       imageUrl: 'https://via.placeholder.com/300x200',
