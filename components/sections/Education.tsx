@@ -24,7 +24,7 @@ const Education: React.FC = () => {
       institution: 'Syracuse University',
       location: 'Syracuse, NY',
       dates: '2017 - 2021',
-      imageUrl: './Amazon.jpeg',
+      imageUrl: 'Syracuse.png',
       coursework: [ 
         'Data Structures & Algorithms',
         'Database Management Systems',
