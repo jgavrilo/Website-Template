@@ -12,8 +12,7 @@ import Footer from '../nav/Footer';
 import styles from '../../styles/components/layout/Layout.module.css';
 import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
-import { SOCIAL_MEDIA } from '../constants';
-import { SECTIONS } from '../constants';
+import { SOCIAL_MEDIA, SECTIONS } from '../constants';
 
 // Define the type for the Layout component's props
 interface LayoutProps {
@@ -30,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
         <main className={styles.mainContent}>{children}</main>
         <div className={styles.rightColumn}>
-          <RightColumn socialIcons={ SOCIAL_MEDIA} />;
+          <RightColumn socialIcons={SOCIAL_MEDIA} />;
         </div>
       </div>
       <Footer />
