@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
     <section className={style.aboutMe}>
       <div className={style.header}>
         <h2>About Me</h2>
-        <img src="https://via.placeholder.com/250x250.png?text=Jeremy+Gavrilov" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
+        <img src="Profile.jpg" alt="Jeremy Gavrilov" className={style.aboutMePhoto} />
       </div>
       <div className={style.aboutMeText}>
         <p>

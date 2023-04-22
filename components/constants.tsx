@@ -17,4 +17,4 @@ export const SOCIAL_MEDIA = [
     { id: "github", icon: <FaGithub />, link: "https://github.com/jgavrilo" },
 ];
 
-export const COPYRIGHT = "2023 YourSiteName. All Rights Reserved.";
+export const COPYRIGHT = "2023 Jeremy Gavrilov. All Rights Reserved.";
