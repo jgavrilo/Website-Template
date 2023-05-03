@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jeremy Gavrilov's Personal Website
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for my personal website. The site serves as an online portfolio, showcasing my experience, education, and skills in the field of software development.
+
+## Overview
+
+This site includes:
+
+- **About Me:** A brief introduction and a bit about who I am and what I do.
+- **Experience:** A comprehensive list of my professional experiences, detailing my roles, responsibilities, and achievements.
+- **Education:** Information about my academic background in Computer Science.
+- **Projects:** A showcase of some of the projects I've worked on, with links to the code on GitHub.
+
+[![Go there now](https://img.shields.io/badge/-Go%20there%20now-9a7fb2?style=for-the-badge&labelColor=9a7fb2&color=9a7fb2)](https://jeremygavrilov.com)
+
+## Tech Stack
+
+The website is built with:
+
+- HTML/CSS
+- JavaScript
+- TypeScript
 
 ## Getting Started
 
@@ -36,3 +57,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contributions
+
+As this is a personal website, I'm not currently accepting pull requests. However, if you have any suggestions or find any bugs, feel free to open an issue.
+
+## Contact Me
+
+I'm always open to feedback, questions, or a quick hello. Feel free to reach out to me at gavrjere@jeremygavrilov.com.
+
+Thanks for stopping by
