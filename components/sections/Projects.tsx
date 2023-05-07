@@ -19,8 +19,8 @@ const Projects: React.FC = () => {
       description: 'A schedule management app from my introductory programming class. Designed to help students organize classes and appointments.',
       technologies: ['Java', 'I/O'],
       imageUrl: './Java.webp',
-      liveLink: 'https://replit.com/@jgavrilo/javaPlanner?v=1',
-      repoLink: 'https://github.com/jgavrilo/javaPlanner',
+      liveLink: 'https://replit.com/@jgavrilo/Schedule-Helper?v=1',
+      repoLink: 'https://github.com/jgavrilo/Schedule-Helper',
     },    
     {
       id: 2,
