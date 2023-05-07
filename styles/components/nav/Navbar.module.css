@@ -125,3 +125,32 @@
     transform: translateY(0);
   }
 }
+
+.navContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Resume Button */
+.resumeButton {
+  background-color: transparent;
+  border: 2px solid var(--navigation-bar-text-color); /* Adjust the border color to match your design */
+  color: var(--navigation-bar-text-color); /* Adjust the text color to match your design */
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  border-radius: 15px; /* Add this line to make the corners rounded */
+}
+
+.resumeButton:hover {
+  background-color: var(--navigation-bar-text-color); /* Adjust the hover background color to match your design */
+  color: white; /* Adjust the hover text color to match your design */
+}
