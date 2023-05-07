@@ -46,8 +46,8 @@ const Projects: React.FC = () => {
       description: 'I like to stay organized, so I built a custom start page that includes links, google cal, and a todo list',
       technologies: ['HTML/CSS', 'Javascript'],
       imageUrl: 'Startpage.jpg',
-      liveLink: 'https://jgavrilo.github.io/startuppage/',
-      repoLink: 'https://github.com/jgavrilo/startuppage',
+      liveLink: 'https://jgavrilo.github.io/Start-Up-Page/',
+      repoLink: 'https://github.com/jgavrilo/Start-Up-Page',
     },
     ];
 
