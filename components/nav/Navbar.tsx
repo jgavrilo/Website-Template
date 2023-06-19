@@ -4,7 +4,21 @@
  *  It contains a navigation bar with links to scroll to different sections of the page.
  *  The navigation bar is responsive and hides when scrolling down, reappearing when scrolling up.
  *  In mobile view, a hamburger menu is used to display the navigation links.
- * 
+ *
+ *  @import React, { useState, useEffect, useRef } from "react" - Importing React, useState, useEffect and useRef hooks from the React library.
+ *  @import styles from "../../styles/components/nav/Navbar.module.css" - Importing the CSS styles for this component from a CSS Module.
+ *  @import Hamburger from "./Hamburger" - Importing the Hamburger component to display a hamburger icon in mobile view.
+ *  @import { WEBSITE_NAME } from "../Constants" - Importing the WEBSITE_NAME constant.
+ *  
+ *  @interface NavbarProps - A TypeScript interface defining the shape of the props that the 'Navbar' component expects.
+ *      The 'items' prop is an array of objects, each representing a link to a section of the page.
+ *
+ *  @function Navbar - The Navbar component that renders the navigation bar.
+ *      It maintains several pieces of state to handle scrolling, resizing and click events, and to control the visibility of the dropdown menu and navigation bar.
+ *      It also utilizes the useRef hook to create a reference to the navigation bar DOM element.
+ *  
+ *  @export Navbar - The Navbar component is exported for use in other components.
+ *
  */
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/components/nav/Navbar.module.css";

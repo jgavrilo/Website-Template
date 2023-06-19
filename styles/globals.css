@@ -23,41 +23,8 @@
   /* General */
   --background-color: var(--base-color-1);
   --text-color: var(--base-color-2);
-
   --introduction-background-color: var(--base-color-1);
   --about-me-background-color: var(--base-color-1);
-
-  /* Skills */
-  --skills-background-color: var(--base-color-4);
-  --skills-text-color: var(--base-color-2);
-
-  /* Experience */
-  --experience-background-color: var(--base-color-1);
-  --job-background-color: var(--base-color-1);
-  --experience-text-color: var(--base-color-2);
-  --job-text-color: var(--base-color-2);
-  --job-border-color: var(--base-color-4);
-
-  /* Education */
-  --education-background-color: var(--base-color-1);
-  --education-text-color: var(--base-color-2);
-  --education-instance-background-color: var(--base-color-1);
-  --education-instance-text-color: var(--base-color-2);
-  --education-instance-border-color: var(--base-color-4);
-
-  /* Projects */
-  --project-background-color: var(--base-color-1);
-  --project-text-color: var(--base-color-2);
-  --project-instance-background-color: var(--base-color-1);
-  --project-instance-text-color: var(--base-color-2);
-  --project-instance-border-color: var(--base-color-4);
-  --project-link-button-color:  var(--base-color-2);
-  --project-link-hover-button-color:  var(--base-color-3);
-  --project-link-button-text-color: var(--base-color-4);
-
-  /* Project Cards */
-  --card-background-color: var(--base-color-4);
-  --card-text-color: var(--base-color-1);
 
   /* Footer */
   --footer-background-color: var(--base-color-1);
@@ -68,37 +35,38 @@
   --footer-link-hover-color: var(--base-color-3);
 }
 
-/* Define global variables for dark theme 
+/* Define global variables for dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-  /* Navigation 
-  --navigation-bar-color: #333;
-  --navigation-bar-text-color: #fff;
-  --navigation-bar-text-hover-color: #0fea25;
-  
-  /* General 
-  --background-color: var(--base-color-1);
-  --introduction-background-color: var(--base-color-1);
-  --about-me-background-color: #6e6eeb;
-  --education-background-color: #6e6eeb;
-  --experience-background-color: #6e6eeb;
-  --projects-background-color: #6e6eeb;
-  --skills-background-color: #6e6eeb;
+    /* Color variables */  
+    --base-color-1: #0b1d51;
+    --base-color-2: #B580DC;
+    --base-color-3: #6ba1c4;
+    --base-color-4: white;
 
-  /* Project Cards 
-  --card-background-color: #ffffff;
-  --card-text-color: #000;
+    /* Navigation */  
+    --navigation-bar-color-rgb: 11, 29, 34;
+    --navigation-bar-color: var(--base-color-1);
+    --navigation-bar-text-color: var(--base-color-2);
+    --navigation-bar-text-hover-color: var(--base-color-3);
+    
+    /* General */
+    --background-color: var(--base-color-1);
+    --text-color: var(--base-color-2);
 
-  /* Footer 
-  --footer-background-color: #333;
-  --footer-border-color: #000000;
-  --footer-text-color: #fff;
-  --footer-link-color: #fff;
-  --footer-link-hover-color: #0fea25;
-  --footer-fluid-background-color: #333;
+    --introduction-background-color: var(--base-color-1);
+    --about-me-background-color: var(--base-color-1);
+
+    /* Footer */
+    --footer-background-color: var(--base-color-1);
+    --footer-fluid-background-color: var(--base-color-1);
+    --footer-border-color: var(--base-color-1);
+    --footer-text-color: var(--base-color-2);
+    --footer-link-color: var(--base-color-2);
+    --footer-link-hover-color: var(--base-color-3);
   }
 }
-*/
+
 /* Reset padding and margin for all elements */
 * {
   box-sizing: border-box;

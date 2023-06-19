@@ -1,6 +1,5 @@
 /* Common styles for both sections */
 .section1,
-.section2,
 .introduction {
   background-color: var(--introduction-background-color);  
   width: 100%;   
@@ -18,12 +17,9 @@
   -webkit-box-align: center;      
 }
 
-/* Specific styles for section 1 */
+/* TODO: Specific styles for section 1 */
 .section1 {
   background-color: var(--background-color);  
 }
 
-/* Specific styles for section 2 */
-.section2 {
-  background-color: var(--background-color); 
-}
+/* TODO: Add sections here */
