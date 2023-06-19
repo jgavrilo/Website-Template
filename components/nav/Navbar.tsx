@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
   return (
     <header className={navbarClasses} ref={headerRef}>
-        <span className={styles.brand}>Jeremy Gavrilov</span>
+        <span className={styles.brand}>Signal Technologies</span>
         {isMobileView && <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />}
         {showDropdown && (
         <div className={styles.dropdownContainer}>
@@ -95,14 +95,6 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
         </ul>
       </div>
       )}
-      <a
-      href="https://jeremygavrilov.com/files/Resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.resumeButton}
-    >
-      Resume
-    </a>
     </header>
   );
 };

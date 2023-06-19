@@ -6,31 +6,14 @@
  */
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import Section from '../components/sections/Section';
-import Introduction from '@component/components/sections/Introduction';
-import AboutMe from '@component/components/sections/AboutMe';
-import Experience from '@component/components/sections/Experience';
-import Education from '@component/components/sections/Education';
-import Projects from '@component/components/sections/Projects';
+import Section from '../components/Section';
 
 const HomePage: React.FC = () => {
   
   return (
     <Layout>
       <Section id="intro">
-        <Introduction />
-      </Section>
-      <Section id="aboutme">
-        <AboutMe />
-      </Section>
-      <Section id="experience">
-        <Experience />
-      </Section>
-      <Section id="education">
-        <Education />
-      </Section>
-      <Section id="projects">
-        <Projects />
+
       </Section>
     </Layout>
   );
