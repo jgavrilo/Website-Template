@@ -9,7 +9,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/components/nav/Navbar.module.css";
 import Hamburger from "./Hamburger";
-import { WEBSITE_NAME } from "../Constants-File";
+import { WEBSITE_NAME } from "../Constants";
 
 interface NavbarProps {
   items: { id: string; text: string }[];

@@ -12,7 +12,7 @@ import Footer from '../nav/Footer';
 import styles from '../../styles/components/layout/Layout.module.css';
 import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
-import { SOCIAL_MEDIA, SECTIONS } from '../Constants-File';
+import { SOCIAL_MEDIA, SECTIONS } from '../Constants';
 
 // Define the type for the Layout component's props
 interface LayoutProps {

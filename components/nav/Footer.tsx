@@ -6,7 +6,7 @@
  */
 import React from 'react';
 import styles from '../../styles/components/nav/Footer.module.css';
-import { COPYRIGHT } from '../Constants-File';
+import { COPYRIGHT } from '../Constants';
 
 function Footer() {
   return (
