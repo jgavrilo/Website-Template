@@ -41,7 +41,7 @@ npm run dev
 yarn dev
 \```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. As you make edits to the project, the page will auto-update.
+Open [http://localhost:3000/hello](http://localhost:3000/hello) with your browser to see the result. As you make edits to the project, the page will auto-update. When you are ready to deploy, remove 'hello' from next.config.js.
 
 ## Deploying to GitHub Pages
 
