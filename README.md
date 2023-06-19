@@ -17,29 +17,13 @@ This website template is built with:
 
 These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
-1. Clone the repo:
-\```bash
-git clone https://github.com/your-github-username/next-website-template.git
-\```
+1. Clone the repo: `git clone https://github.com/your-github-username/next-website-template.git`
 
-2. Navigate into the project directory:
-\```bash
-cd next-website-template
-\```
+3. Navigate into the project directory: `cd next-website-template`
 
-3. Install the dependencies:
-\```bash
-npm install
-# or
-yarn install
-\```
+4. Install the dependencies: `npm install` --or- `yarn install`
 
-4. Run the development server:
-\```bash
-npm run dev
-# or
-yarn dev
-\```
+5. Run the development server: `npm run dev` --or-- `yarn dev`
 
 Open [http://localhost:3000/hello](http://localhost:3000/hello) with your browser to see the result. As you make edits to the project, the page will auto-update. When you are ready to deploy, remove 'hello' from next.config.js.
 
@@ -47,19 +31,9 @@ Open [http://localhost:3000/hello](http://localhost:3000/hello) with your browse
 
 Deploying this website to GitHub Pages requires a few additional steps:
 
-1. Build the project:
-\```bash
-npm run build
-# or
-yarn build
-\```
+1. Build the project: `npm run build` --or-- `yarn build`
 
-2. Deploy the project to GitHub Pages:
-\```bash
-npm run deploy
-# or
-yarn deploy
-\```
+2. Deploy the project to GitHub Pages: `npm run deploy` --or-- `yarn deploy`
 
 3. Update the CNAME file with your domain name.
 
