@@ -33,7 +33,7 @@ Deploying this website to GitHub Pages requires a few additional steps:
 
 1. Build the project: `npm run build` --or-- `yarn build`
 
-2. Deploy the project to GitHub Pages: `npm run deploy --or-- `yarn deploy`
+2. Deploy the project to GitHub Pages: `npm run deploy` --or-- `yarn deploy`
 
 3. Update the CNAME file with your domain name.
 
