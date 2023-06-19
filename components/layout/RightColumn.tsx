@@ -1,6 +1,6 @@
 /** RightColumn.tsx
  *
- * This is the RightColumn component for the website.
+ * This is the RightColumn component for a website.
  * It displays a list of social icons in the right column of the page layout.
  *
  */

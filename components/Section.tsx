@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import styles from '../styles/pages/Home.module.css';
 
 type SectionProps = {

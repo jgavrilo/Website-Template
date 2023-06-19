@@ -17,4 +17,5 @@ export const SOCIAL_MEDIA = [
     { id: "github", icon: <FaGithub />, link: "https://github.com/" },
 ];
 
+export const WEBSITE_NAME = "Website Name"
 export const COPYRIGHT = "Website Name All Rights Reserved.";

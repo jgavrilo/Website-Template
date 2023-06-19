@@ -1,8 +1,7 @@
 /** LeftColumn.tsx
  * 
- *  This is the LeftColumn component for the website.
+ *  This is the LeftColumn component for a website.
  *  It displays a list of section links that are fixed to the left side of the page.
- *  When the user scrolls down, the left column hides partially.
  *
  */
 import React, { useState, useEffect } from "react";

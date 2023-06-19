@@ -9,6 +9,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/components/nav/Navbar.module.css";
 import Hamburger from "./Hamburger";
+import { WEBSITE_NAME } from "../Constants-File";
 
 interface NavbarProps {
   items: { id: string; text: string }[];
@@ -80,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
   return (
     <header className={navbarClasses} ref={headerRef}>
-        <span className={styles.brand}>Website Name</span>
+        <span className={styles.brand}>{WEBSITE_NAME}</span>
         {isMobileView && <Hamburger onClick={toggleDropdown} showDropdown={showDropdown} />}
         {showDropdown && (
         <div className={styles.dropdownContainer}>
